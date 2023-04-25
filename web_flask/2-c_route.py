@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-""" write a script that starts a Flask web application:
+""" Write a script that starts a Flask web application:
 Your web application must be listening on 0.0.0.0, port 5000
 """
 
-from flask import flask
+from flask import Flask
 
 app = Flask("__name__")
 
@@ -22,8 +22,8 @@ def hbnb():
 
 @app.route("/c/<text>", strict_slashes=False)
 def cText(text):
-    """display c followed by the value of the text variable"""
-    return "c {}".format(text.replace("_", " "))
+    """display C followed by the value of the text variable"""
+    return "C {}".format(text.replace("_", " "))
 
 
 if __name__ == "__main__":
